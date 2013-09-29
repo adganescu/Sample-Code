@@ -1,0 +1,24 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
+int main() {
+        void *ptr3 = malloc(sizeof(double));
+        void *ptr = malloc(sizeof(int));
+        void *ptr2 = "HELLO";
+
+        *((int*)ptr) = 5;
+
+        printf("%d\n", *((int*) ptr));
+
+
+        *((double*)ptr3) = 5.9;
+
+        printf("%f\n", *((double*) ptr3));
+
+        printf("%s\n", (char*) ptr2);
+
+return 0;
+}
+
+/* Shows how to take void pointers and cast them to different types in order to print them out */
